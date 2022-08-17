@@ -29,9 +29,33 @@ block variables
                 innerHTML: 'Home collection', 
             }, 
         ];
+        let newList = [
+            {
+                imgName: 'i1', 
+                imgAlt: 'Terry tote bag', 
+                colors: '4 colors', 
+                aHref: '#', 
+                aInnerHTML: 'Terry tote bag', 
+            }, 
+            {
+                imgName: 'i2', 
+                imgAlt: 'Re-Nylon bucket hat', 
+                colors: '8 colors', 
+                aHref: '#', 
+                aInnerHTML: 'Re-Nylon bucket hat', 
+            }, 
+            {
+                imgName: 'i3', 
+                imgAlt: 'Prada Symbole sunglasses', 
+                colors: '1 color', 
+                aHref: '#', 
+                aInnerHTML: 'Prada Symbole sunglasses', 
+            }, 
+        ];
 
 block header
     include ../../sections/header/header.pug
 block main
     include ../../sections/hero/hero.pug
     include ../../sections/seasons/seasons.pug
+    include ../../sections/new/new.pug
