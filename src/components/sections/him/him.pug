@@ -1,0 +1,20 @@
+section(class="him")
+    div(class="container him__container")
+        div(class="layout him__layout")
+            ul(class="list-reset him__list list-him")
+                each item in himList
+                    li(class="list-him__item")
+                        div(class="card")
+                            div(class="card__img-wrap")
+                                picture
+                                    source(
+                                        type="image/jpg"
+                                        srcset=`assets/img/him/${item.imgName}@2x.webp 2x, assets/img/him/${item.imgName}@1x.webp 1x`
+                                    )
+                                    source(
+                                        type="image/webp"
+                                        srcset=`assets/img/him/${item.imgName}@2x.jpg 2x, assets/img/him/${item.imgName}@1x.jpg 1x`
+                                    )
+                                    img(class="card__img" src=`assets/img/him/${item.imgName}@1x.jpg` alt=item.imgAlt style="max-width: 100%;")
+                            span(class="card__colors")= item.colors
+                            a(class="link card__link" href=item.aHref)= item.aInnerHTML
