@@ -1,0 +1,18 @@
+.seasons {
+    &__layout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 470px;
+        margin: 0 auto 2.5625em;
+    }
+
+    &__title {
+        margin-bottom: 0.7222em;
+    }
+
+    &__text {
+        margin-bottom: 1.7777em;
+        text-align: center;
+    }
+}

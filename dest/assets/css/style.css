@@ -34,7 +34,7 @@
   --bg: #C4C4C4;
   --btn-bg-hover: #000;
   --btn-color-hover: #fff;
-  --duration: 300ms;
+  --duration: 200ms;
   --timing-function: ease-in;
 }
 
@@ -93,11 +93,11 @@
 .btn {
   border: 1px solid var(--text);
   border-radius: 0;
-  padding: 0;
+  padding: 1.28em 3.9em;
   background: none;
   color: var(--text);
   font: 600 0.875em/1.3619 "Open sans", sans-serif;
-  text-decoration: center;
+  text-decoration: none;
   transition: background-color var(--duration) var(--timing-function), color var(--duration) var(--timing-function), border-color var(--duration) var(--timing-function);
 }
 .btn--alter {
@@ -107,6 +107,13 @@
   border-color: var(--btn-bg-hover);
   color: var(--btn-color-hover);
   background: var(--btn-bg-hover);
+}
+
+.text {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--text);
+  font: 400 1.125em/1.3619 "Open sans", sans-serif;
 }
 
 .header {
@@ -159,6 +166,9 @@
   padding-right: 6.375rem;
   padding-left: 6.375rem;
 }
+.hero__layout {
+  margin-bottom: 1.5625em;
+}
 .hero__title {
   margin-bottom: 0.4166em;
 }
@@ -181,4 +191,19 @@
 }
 .nav-hero__link {
   font: 400 1.125em/1.07 "Modern 20", sans-serif;
+}
+
+.seasons__layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 470px;
+  margin: 0 auto 2.5625em;
+}
+.seasons__title {
+  margin-bottom: 0.7222em;
+}
+.seasons__text {
+  margin-bottom: 1.7777em;
+  text-align: center;
 }

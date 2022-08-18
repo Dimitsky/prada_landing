@@ -10,7 +10,7 @@
     --btn-bg-hover: #000;
     --btn-color-hover: #fff;
 
-    --duration: 300ms;
+    --duration: 200ms;
     --timing-function: ease-in;
 }
 
@@ -38,7 +38,9 @@
 @import '../ui/title/title.scss';
 @import '../ui/link/link.scss';
 @import '../ui/btn/btn.scss';
+@import '../ui/text/text.scss';
 
 // sections
 @import '../sections/header/header.scss';
 @import '../sections/hero/hero.scss';
+@import '../sections/seasons/seasons.scss';

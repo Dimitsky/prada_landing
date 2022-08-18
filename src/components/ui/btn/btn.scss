@@ -1,11 +1,11 @@
 .btn {
     border: 1px solid var(--text);
     border-radius: 0;
-    padding: 0;
+    padding: 1.28em 3.9em;
     background: none;
     color: var(--text);
     font: 600 0.875em/1.3619 'Open sans', sans-serif;
-    text-decoration: center;
+    text-decoration: none;
     transition: background-color var(--duration) var(--timing-function), 
                 color var(--duration) var(--timing-function),
                 border-color var(--duration) var(--timing-function);
