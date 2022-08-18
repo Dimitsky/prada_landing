@@ -3,4 +3,8 @@
     margin-bottom: 0;
     color: var(--text);
     font: 400 1.125em/1.3619 'Open sans', sans-serif;
+
+    &--sm {
+        font-size: 0.75em;
+    }
 }
