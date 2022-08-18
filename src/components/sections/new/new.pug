@@ -1,12 +1,12 @@
 section(class="new")
     div(class="container new__container")
         div(class="layout new__layout")
-            h2(class="title new__title") NEW ARRIVALS
+            h2(class="title title--md new__title") NEW ARRIVALS
             ul(class="list-reset new__list list-new")
                 each item in newList
                     li(class="list-new__item")
-                        div(class="card list-new__body body-list-new")
-                            div(class="card__img-wrap body-list-new__img-wrap")
+                        div(class="card")
+                            div(class="card__img-wrap")
                                 picture
                                     source(
                                         type="image/jpg"
@@ -16,6 +16,7 @@ section(class="new")
                                         type="image/webp"
                                         srcset=`assets/img/new/${item.imgName}@2x.jpg 2x, assets/img/new/${item.imgName}@1x.jpg 1x`
                                     )
-                                    img(class="card__img body-list-new__img" src=`assets/img/new/${item.imgName}@1x.jpg` alt=item.imgAlt style="max-width: 100%;")
-                            span(class="card__colors body-list-new__colors")= item.colors
-                            a(class="link card__link body-list-new__link" href=item.aHref)= item.aInnerHTML
+                                    img(class="card__img" src=`assets/img/new/${item.imgName}@1x.jpg` alt=item.imgAlt style="max-width: 100%;")
+                            div(class="card__info info-card")
+                                span(class="info-card__colors")= item.colors
+                                a(class="link info-card__link" href=item.aHref)= item.aInnerHTML

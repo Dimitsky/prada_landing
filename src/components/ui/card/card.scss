@@ -1,0 +1,40 @@
+.card {
+    position: relative;
+
+    &__img-wrap {
+        height: 34.445vw;
+        margin-bottom: 1.062em;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 2.5em;
+    }
+
+}
+
+.info-card {
+    &__colors {
+        margin-bottom: 0.3333em;
+        color: var(--card-text-alter);
+        font-size: 0.75em;
+        font-weight: 600;
+        line-height: 1.3616;
+        text-transform: uppercase;
+    }
+    
+    &__link {
+        color: var(--text);
+        font-size: 0.875em;
+        font-weight: 600;
+        line-height: 1.3621;
+    }
+}

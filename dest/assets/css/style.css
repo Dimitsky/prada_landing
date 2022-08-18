@@ -31,9 +31,11 @@
   font-family: "Open sans", sans-serif;
   font-size: 100%;
   --text: #000;
-  --bg: #C4C4C4;
+  --bg: #f4f5f7;
+  --bg-header: #C4C4C4;
   --btn-bg-hover: #000;
   --btn-color-hover: #fff;
+  --card-text-alter: #848484;
   --duration: 200ms;
   --timing-function: ease-in;
 }
@@ -44,8 +46,13 @@
   box-sizing: inherit;
 }
 
-.container {
+.main {
   max-width: 1440px;
+  margin: auto;
+  background: var(--bg);
+}
+
+.container {
   margin: auto;
   padding-right: 7.625rem;
   padding-left: 7.625rem;
@@ -116,8 +123,42 @@
   font: 400 1.125em/1.3619 "Open sans", sans-serif;
 }
 
+.card {
+  position: relative;
+}
+.card__img-wrap {
+  height: 34.445vw;
+  margin-bottom: 1.062em;
+}
+.card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 2.5em;
+}
+
+.info-card__colors {
+  margin-bottom: 0.3333em;
+  color: var(--card-text-alter);
+  font-size: 0.75em;
+  font-weight: 600;
+  line-height: 1.3616;
+  text-transform: uppercase;
+}
+.info-card__link {
+  color: var(--text);
+  font-size: 0.875em;
+  font-weight: 600;
+  line-height: 1.3621;
+}
+
 .header {
-  background: var(--bg);
+  background: var(--bg-header);
 }
 .header__container {
   padding-right: 8.9375rem;
@@ -129,7 +170,6 @@
   grid-template-areas: ". sale login";
   align-items: center;
   min-height: 50px;
-  margin-bottom: 1.4285em;
   padding-top: 3px;
   font-size: 0.875em;
   line-height: 1.3619;
@@ -168,6 +208,7 @@
 }
 .hero__layout {
   margin-bottom: 1.5625em;
+  padding-top: 1.25em;
 }
 .hero__title {
   margin-bottom: 0.4166em;
@@ -206,4 +247,13 @@
 .seasons__text {
   margin-bottom: 1.7777em;
   text-align: center;
+}
+
+.new__title {
+  margin-bottom: 74px;
+}
+.new__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
 }

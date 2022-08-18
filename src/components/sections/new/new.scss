@@ -1,0 +1,11 @@
+.new {
+    &__title {
+        margin-bottom: 74px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 50px
+    }
+}

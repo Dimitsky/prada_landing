@@ -6,9 +6,11 @@
     font-size: 100%;
 
     --text: #000;
-    --bg: #C4C4C4;
+    --bg: #f4f5f7;
+    --bg-header: #C4C4C4;
     --btn-bg-hover: #000;
     --btn-color-hover: #fff;
+    --card-text-alter: #848484;
 
     --duration: 200ms;
     --timing-function: ease-in;
@@ -20,8 +22,13 @@
     box-sizing: inherit;
 }
 
-.container {
+.main {
     max-width: 1440px;
+    margin: auto;
+    background: var(--bg);
+}
+
+.container {
     margin: auto;
     padding-right: 7.625rem;
     padding-left: 7.625rem;
@@ -39,8 +46,10 @@
 @import '../ui/link/link.scss';
 @import '../ui/btn/btn.scss';
 @import '../ui/text/text.scss';
+@import '../ui/card/card.scss';
 
 // sections
 @import '../sections/header/header.scss';
 @import '../sections/hero/hero.scss';
 @import '../sections/seasons/seasons.scss';
+@import '../sections/new/new.scss';
