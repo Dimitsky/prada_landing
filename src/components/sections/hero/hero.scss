@@ -1,0 +1,35 @@
+.hero {
+    &__container {
+        padding-right: 6.375rem;
+        padding-left: 6.375rem;
+    }
+
+    &__title {
+        margin-bottom: 0.4166em;
+    }
+
+    &__nav {
+        margin-bottom: 1em;
+    }
+
+    &__img-wrap {
+        height: 47.9vw;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.nav-hero {
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 4.4375em;
+    }
+    &__link {
+        font: 400 1.125em/1.07 'Modern 20', sans-serif;
+    }
+}

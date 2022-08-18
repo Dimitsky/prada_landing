@@ -51,6 +51,13 @@
   padding-left: 7.625rem;
 }
 
+.list-reset {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
 .title {
   margin-top: 0;
   margin-bottom: 0;
@@ -115,6 +122,7 @@
   grid-template-areas: ". sale login";
   align-items: center;
   min-height: 50px;
+  margin-bottom: 1.4285em;
   padding-top: 3px;
   font-size: 0.875em;
   line-height: 1.3619;
@@ -145,4 +153,32 @@
 }
 .header__svg {
   display: block;
+}
+
+.hero__container {
+  padding-right: 6.375rem;
+  padding-left: 6.375rem;
+}
+.hero__title {
+  margin-bottom: 0.4166em;
+}
+.hero__nav {
+  margin-bottom: 1em;
+}
+.hero__img-wrap {
+  height: 47.9vw;
+}
+.hero__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav-hero__list {
+  display: flex;
+  justify-content: center;
+  gap: 4.4375em;
+}
+.nav-hero__link {
+  font: 400 1.125em/1.07 "Modern 20", sans-serif;
 }

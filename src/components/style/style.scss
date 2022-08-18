@@ -27,6 +27,13 @@
     padding-left: 7.625rem;
 }
 
+.list-reset {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none
+}
+
 // ui
 @import '../ui/title/title.scss';
 @import '../ui/link/link.scss';
@@ -34,3 +41,4 @@
 
 // sections
 @import '../sections/header/header.scss';
+@import '../sections/hero/hero.scss';
