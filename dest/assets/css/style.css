@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "Open sans";
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Open sans";
+  src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2"), url("../fonts/OpenSans-SemiBold.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Open sans";
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Modern 20";
+  src: url("../fonts/Modern-Regular.woff2") format("woff2"), url("../fonts/Modern-Regularwoff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+:root {
+  box-sizing: border-box;
+  font-family: "Open sans", sans-serif;
+  font-size: 100%;
+  --text: #000;
+  --bg: #C4C4C4;
+  --btn-bg-hover: #000;
+  --btn-color-hover: #fff;
+  --duration: 300ms;
+  --timing-function: ease-in;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+  padding-right: 7.625rem;
+  padding-left: 7.625rem;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--text);
+  font-family: "Open sans", sans-serif;
+  font-weight: 600;
+  line-height: 1.3619;
+  text-align: center;
+}
+.title--alter {
+  font-family: "Modern 20", sans-serif;
+  font-weight: 400;
+  line-height: 1.07;
+}
+.title--lg {
+  font-size: 3em;
+}
+.title--md {
+  font-size: 2.25em;
+}
+.title--sm {
+  font-size: 1.5em;
+}
+.title--xsm {
+  font-size: 1.125em;
+}
+
+.link {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.btn {
+  border: 1px solid var(--text);
+  border-radius: 0;
+  padding: 0;
+  background: none;
+  color: var(--text);
+  font: 600 0.875em/1.3619 "Open sans", sans-serif;
+  text-decoration: center;
+  transition: background-color var(--duration) var(--timing-function), color var(--duration) var(--timing-function), border-color var(--duration) var(--timing-function);
+}
+.btn--alter {
+  background: #fff;
+}
+.btn:hover {
+  border-color: var(--btn-bg-hover);
+  color: var(--btn-color-hover);
+  background: var(--btn-bg-hover);
+}
+
+.header {
+  background: var(--bg);
+}
+.header__container {
+  padding-right: 8.9375rem;
+  padding-left: 8.9375rem;
+}
+.header__layout {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-areas: ". sale login";
+  align-items: center;
+  min-height: 50px;
+  padding-top: 3px;
+  font-size: 0.875em;
+  line-height: 1.3619;
+}
+.header__sale {
+  grid-area: sale;
+  text-align: center;
+  text-decoration: underline;
+}
+.header__login {
+  margin-right: 1.1428em;
+}
+.header__group {
+  display: flex;
+  align-items: center;
+  grid-area: login;
+  justify-self: end;
+}
+.header__favorite {
+  margin-right: 1.6428em;
+}
+.header__bag {
+  display: flex;
+  align-items: baseline;
+}
+.header__bag > svg {
+  margin-right: 0.3571em;
+}
+.header__svg {
+  display: block;
+}

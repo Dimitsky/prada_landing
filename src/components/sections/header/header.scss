@@ -1,0 +1,54 @@
+.header {
+    background: var(--bg);
+
+    &__container {
+        padding-right: 8.9375rem;
+        padding-left: 8.9375rem;
+    }
+
+    &__layout {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        grid-template-areas: 
+            ". sale login";
+        align-items: center;
+        min-height: 50px;
+        padding-top: 3px;   // PIXELPERFECT
+        font-size: 0.875em;
+        line-height: 1.3619;
+    }
+
+    &__sale {
+        grid-area: sale;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    &__login {
+        margin-right: 1.1428em;
+    }
+
+    &__group {
+        display: flex;
+        align-items: center;
+        grid-area: login;
+        justify-self: end;
+    }
+
+    &__favorite {
+        margin-right: 1.6428em;
+    }
+
+    &__bag {
+        display: flex;
+        align-items: baseline;
+
+        & > svg {
+            margin-right: 0.3571em;
+        }
+    }
+
+    &__svg {
+        display: block;
+    }
+}

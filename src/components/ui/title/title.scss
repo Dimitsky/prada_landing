@@ -1,0 +1,31 @@
+.title {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--text);
+    font-family: 'Open sans', sans-serif;
+    font-weight: 600;
+    line-height: 1.3619;
+    text-align: center;
+
+    &--alter {
+        font-family: 'Modern 20', sans-serif;
+        font-weight: 400;
+        line-height: 1.07;
+    }
+
+    &--lg {
+        font-size: 3em;        
+    }
+
+    &--md {
+        font-size: 2.25em;
+    }
+    
+    &--sm {
+        font-size: 1.5em;
+    }
+
+    &--xsm {
+        font-size: 1.125em;
+    }
+}
