@@ -41,3 +41,35 @@
         min-width: 224px;
     }
 }
+
+@media (max-width: 1023px) {
+    .collections {
+        &__img-wrap {
+            height: 49.556vw;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .collections {
+        &__layout {
+            flex-direction: column;
+            padding-bottom: 3em;
+        }
+
+        &__group {
+            align-items: center;
+        }
+        
+        &__img-wrap {
+            flex-basis: 80vw;
+            height: auto;
+            margin-right: -0.75rem;
+            margin-left: -0.75rem;
+        }
+
+        &__text {
+            text-align: center;
+        }
+    }
+}

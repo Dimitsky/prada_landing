@@ -47,3 +47,19 @@
         }
     }
 }
+
+@media (max-width: 1023px) {
+    .card {
+        &__img-wrap {
+            height: 40.445vw;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .card {
+        &__img-wrap {
+            height: 500px;
+        }
+    }
+}
