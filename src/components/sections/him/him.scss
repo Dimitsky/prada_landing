@@ -1,15 +1,15 @@
-.new {
+.him {
     &__layout {
-        padding-bottom: 4.5625em;
+        padding-bottom: 9.75em;
     }
-
+    
     &__title {
-        margin-bottom: 74px;
+        margin-bottom: 2.0277em;
     }
 
     &__list {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 3.125em
+        grid-gap: 3.125em;
     }
 }

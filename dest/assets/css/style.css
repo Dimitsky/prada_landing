@@ -156,6 +156,14 @@
   font-weight: 600;
   line-height: 1.3621;
 }
+.info-card__link:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 
 .header__container {
   padding-right: 8.9375rem;
@@ -257,7 +265,7 @@
 .new__list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 50px;
+  grid-gap: 3.125em;
 }
 
 .collections__layout {
@@ -291,4 +299,16 @@
 }
 .collections__link {
   min-width: 224px;
+}
+
+.him__layout {
+  padding-bottom: 9.75em;
+}
+.him__title {
+  margin-bottom: 2.0277em;
+}
+.him__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3.125em;
 }
