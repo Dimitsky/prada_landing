@@ -1,9 +1,9 @@
 .header {
-    background: var(--bg-header);
-
+    
     &__container {
         padding-right: 8.9375rem;
         padding-left: 8.9375rem;
+        background: var(--bg-header);
     }
 
     &__layout {

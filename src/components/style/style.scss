@@ -22,16 +22,12 @@
     box-sizing: inherit;
 }
 
-.main {
-    max-width: 1440px;
-    margin: auto;
-    background: var(--bg);
-}
-
 .container {
+    max-width: 1440px;
     margin: auto;
     padding-right: 7.625rem;
     padding-left: 7.625rem;
+    background: var(--bg);
 }
 
 .list-reset {
