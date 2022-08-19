@@ -12,6 +12,13 @@
         font-weight: 400;
         line-height: 1.07;
     }
+    
+    &--contrast {
+        color: var(--contrast);
+        font-family: 'Segoe UI', sans-serif;
+        font-weight: 600;
+        letter-spacing: 0.35em;
+    }
 
     &--lg {
         font-size: 3em;        

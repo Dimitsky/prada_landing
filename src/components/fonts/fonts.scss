@@ -28,8 +28,17 @@
 @font-face {
     font-family: 'Modern 20';
     src: url('../fonts/Modern-Regular.woff2') format('woff2'), 
-         url('../fonts/Modern-Regularwoff') format('woff');
+         url('../fonts/Modern-Regular.woff') format('woff');
     font-display: swap;
     font-style: normal;
     font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../fonts/SegoeUI-SemiBold.woff2') format('woff2'), 
+         url('../fonts/SegoeUI-SemiBold.woff') format('woff');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 600;
 }

@@ -2,7 +2,13 @@
     color: var(--text);
     text-decoration: none;
 
+    &:focus {
+        outline: 2px solid transparent;    // В режиме высокой контрастности transparent заменяется на цвет, а box-shadow отключается
+        box-shadow: 0px 0px 0px 2px blue;
+    }
+
     &:hover {
+        color: #444;
         text-decoration: underline;
     }
 }

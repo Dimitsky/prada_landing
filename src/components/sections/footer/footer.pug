@@ -1,39 +1,40 @@
 footer(class="footer")
     div(class="container footer__container")
         div(class="layout footer__layout")
-            div(class="footer__group group-footer")
-                h4(class="group-footer__title") COMPANY
-                ul(class="list-reset group-footer__list list-group-footer")
-                    each item in companyList
-                        li(class="list-group-footer__item")
-                            a(class="list-group-footer__link" href=item.href)= item.innerHTML
-            div(class="footer__group group-footer")
-                h4(class="group-footer__title") LEGAL TERMS AND CONDITIONS
-                ul(class="list-reset group-footer__list list-group-footer")
-                    each item in legalList
-                        li(class="list-group-footer__item")
-                            a(class="list-group-footer__link" href=item.href)= item.innerHTML
-            div(class="footer__group group-footer")
-                h4(class="group-footer__title") FOLLOW US
-                ul(class="list-reset group-footer__list list-group-footer")
-                    li(class="list-group-footer__item")
-                        a(class="list-group-footer__link" href="#") 
-                            svg(width="20" height="20" viewBox="0 0 20 20")
-                                use(href="assets/img/defs.svg#twitter")
-                    li(class="list-group-footer__item")
-                        a(class="list-group-footer__link" href="#") 
-                            svg(width="20" height="20" viewBox="0 0 20 20")
-                                use(href="assets/img/defs.svg#instagram")
-                    li(class="list-group-footer__item")
-                        a(class="list-group-footer__link" href="#") 
-                            svg(width="20" height="20" viewBox="0 0 20 20")
-                                use(href="assets/img/defs.svg#facebook")
-                    li(class="list-group-footer__item")
-                        a(class="list-group-footer__link" href="#") 
-                            svg(width="20" height="20" viewBox="0 0 20 20")
-                                use(href="assets/img/defs.svg#youtube")
+            div(class="footer__top")
+                div(class="footer__group group-footer")
+                    h4(class="title title--xsm group-footer__title") COMPANY
+                    ul(class="list-reset group-footer__list list-group-footer")
+                        each item in companyList
+                            li(class="list-group-footer__item")
+                                a(class="link list-group-footer__link" href=item.href)= item.innerHTML
+                div(class="footer__group group-footer")
+                    h4(class="title title--xsm group-footer__title") LEGAL TERMS AND CONDITIONS
+                    ul(class="list-reset group-footer__list list-group-footer")
+                        each item in legalList
+                            li(class="list-group-footer__item")
+                                a(class="link list-group-footer__link" href=item.href)= item.innerHTML
+                div(class="footer__group group-footer")
+                    h4(class="title title--xsm group-footer__title") FOLLOW US
+                    ul(class="list-reset group-footer__list group-footer__social social-group-footer list-group-footer")
+                        li(class="list-group-footer__item social-group-footer__item")
+                            a(class="link list-group-footer__link" href="#") 
+                                svg(width="20" height="20" viewBox="0 0 20 20")
+                                    use(href="assets/img/defs.svg#twitter")
+                        li(class="list-group-footer__item social-group-footer__item")
+                            a(class="link list-group-footer__link" href="#") 
+                                svg(width="20" height="20" viewBox="0 0 20 20")
+                                    use(href="assets/img/defs.svg#instagram")
+                        li(class="list-group-footer__item social-group-footer__item")
+                            a(class="link list-group-footer__link" href="#") 
+                                svg(width="20" height="20" viewBox="0 0 20 20")
+                                    use(href="assets/img/defs.svg#facebook")
+                        li(class="list-group-footer__item social-group-footer__item")
+                            a(class="link list-group-footer__link" href="#") 
+                                svg(width="20" height="20" viewBox="0 0 20 20")
+                                    use(href="assets/img/defs.svg#youtube")
             div(class="footer__bottom")
-                a(class="footer__locator" href="#")
+                a(class="link footer__locator" href="#")
                     svg(width="15" height="15" viewBox="0 0 15 15")
                         use(href="assets/img/defs.svg#locator")
                     span Store Locator
