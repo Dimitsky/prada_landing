@@ -15,7 +15,7 @@
 
     &__img-wrap {
         flex-basis: 781px;
-        height: 45.556vw;   
+        height: 656px;   
     }
 
     &__img {
@@ -39,6 +39,14 @@
 
     &__link {
         min-width: 224px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .collections {
+        &__img-wrap {
+            height: 45.556vw;
+        }
     }
 }
 

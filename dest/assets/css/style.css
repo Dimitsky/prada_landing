@@ -174,7 +174,7 @@
   position: relative;
 }
 .card__img-wrap {
-  height: 34.445vw;
+  height: 496px;
   margin-bottom: 1.062em;
 }
 .card__img {
@@ -212,6 +212,11 @@
   left: 0;
 }
 
+@media screen and (max-width: 1199px) {
+  .card__img-wrap {
+    height: 34.445vw;
+  }
+}
 @media (max-width: 1023px) {
   .card__img-wrap {
     height: 40.445vw;
@@ -301,7 +306,7 @@
   margin-bottom: 1em;
 }
 .hero__img-wrap {
-  height: 47.9vw;
+  height: 689px;
 }
 .hero__img {
   width: 100%;
@@ -322,6 +327,9 @@
   .hero__container {
     padding-right: 1.875rem;
     padding-left: 1.875rem;
+  }
+  .hero__img-wrap {
+    height: 47.9vw;
   }
 }
 @media (max-width: 1023px) {
@@ -427,7 +435,7 @@
 }
 .collections__img-wrap {
   flex-basis: 781px;
-  height: 45.556vw;
+  height: 656px;
 }
 .collections__img {
   width: 100%;
@@ -447,6 +455,11 @@
   min-width: 224px;
 }
 
+@media screen and (max-width: 1199px) {
+  .collections__img-wrap {
+    height: 45.556vw;
+  }
+}
 @media (max-width: 1023px) {
   .collections__img-wrap {
     height: 49.556vw;
@@ -518,7 +531,7 @@
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end;
-  height: 40.3vw;
+  height: 581px;
   padding: 2.5625em;
   background: no-repeat center/cover;
   background-image: url("../img/pradina/i1@1x.jpg");
@@ -535,6 +548,9 @@
   .pradina__container {
     padding-right: 1.875rem;
     padding-left: 1.875rem;
+  }
+  .pradina__layout {
+    height: 40.3vw;
   }
 }
 @media (max-width: 1023px) {

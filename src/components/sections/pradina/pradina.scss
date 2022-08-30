@@ -8,7 +8,7 @@
         flex-direction: column;
         align-items: flex-end;
         justify-content: flex-end;
-        height: 40.3vw;
+        height: 581px;
         padding: 2.5625em;
         background: no-repeat center / cover;
         background-image: url('../img/pradina/i1@1x.jpg');   // fallback
@@ -34,6 +34,10 @@
         &__container {
             padding-right: 1.875rem;
             padding-left: 1.875rem;
+        }
+
+        &__layout {
+            height: 40.3vw;
         }
     }
 }
